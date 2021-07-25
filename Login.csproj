@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74915E73-09EF-45ED-866E-0E7C45FDD0DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKey.Designer.cs">
+      <DependentUpon>ActivationKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKey1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKey1.Designer.cs">
+      <DependentUpon>ActivationKey1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyMarket.Designer.cs">
+      <DependentUpon>ActivationKeyMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyMarket1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyMarket1.Designer.cs">
+      <DependentUpon>ActivationKeyMarket1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyStore.Designer.cs">
+      <DependentUpon>ActivationKeyStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyStore1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyStore1.Designer.cs">
+      <DependentUpon>ActivationKeyStore1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyTech.Designer.cs">
+      <DependentUpon>ActivationKeyTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationKeyTech1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationKeyTech1.Designer.cs">
+      <DependentUpon>ActivationKeyTech1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketLogin.Designer.cs">
+      <DependentUpon>MarketLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RastaurantLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RastaurantLogin.Designer.cs">
+      <DependentUpon>RastaurantLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreLogin.Designer.cs">
+      <DependentUpon>StoreLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechLogin.Designer.cs">
+      <DependentUpon>TechLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActivationKey.resx">
+      <DependentUpon>ActivationKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKey1.resx">
+      <DependentUpon>ActivationKey1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyMarket.resx">
+      <DependentUpon>ActivationKeyMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyMarket1.resx">
+      <DependentUpon>ActivationKeyMarket1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyStore.resx">
+      <DependentUpon>ActivationKeyStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyStore1.resx">
+      <DependentUpon>ActivationKeyStore1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyTech.resx">
+      <DependentUpon>ActivationKeyTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationKeyTech1.resx">
+      <DependentUpon>ActivationKeyTech1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketLogin.resx">
+      <DependentUpon>MarketLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RastaurantLogin.resx">
+      <DependentUpon>RastaurantLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StoreLogin.resx">
+      <DependentUpon>StoreLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechLogin.resx">
+      <DependentUpon>TechLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
